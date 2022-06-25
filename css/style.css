@@ -1,0 +1,73 @@
+body {
+   background: #000000f2;
+   color: #212529;
+   font-family: serif;
+   overflow-y: hidden;
+}
+
+.form-control {
+   background-color: transparent;
+   border: none;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+   border-radius: 0;
+   color: #fff;
+   font-weight: 800;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-control:focus {
+   background-color: transparent;
+   border: none;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+   border-radius: 0;
+   color: rgb(73, 80, 87);
+   border-color: #ff645c76;
+   box-shadow: 0 0 0 0.1rem #ff645c76;
+}
+.layer {
+   top: 100%;
+   background-color: rgba(255, 255, 255, 0.5);
+   color: #000;
+   font-weight: 600;
+   transition: all 1s;
+}
+#post:hover .layer {
+   top: 0;
+   transition: all 1s;
+}
+#sideNav {
+   width: 250px;
+   left: -185px;
+}
+#sideNav li {
+   margin: 5px;
+}
+#sideNav a {
+   color: #fff;
+   font-weight: 300;
+   transition: all 0.4s;
+}
+#sideNav a:hover {
+   color: #ff645c;
+   transition: all 0.4s;
+}
+
+#toggler-closer {
+   font-size: 30px;
+   cursor: pointer;
+}
+#loading {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: #333;
+   z-index: 99999999999;
+}
+.spinner {
+   width: 50px;
+   height: 40px;
+   text-align: center;
+   font-size: 50px;
+   color: #fff;
+}

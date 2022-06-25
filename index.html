@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="keywords" content="Bootstrap Example" />
+      <meta name="description" content="That is an example for bootstrap website" />
+      <title>Login</title>
+      <link rel="icon" href="" />
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/all.min.css" />
+      <link rel="stylesheet" href="css/icofont.min.css" />
+   </head>
+   <body>
+      <section id="loading" >
+
+         <div class="spinner d-flex justify-content-center align-content-center align-items-center w-100 h-100">
+            <i class="fa-solid fa-cog fa-spin d-block "></i>
+           </div>
+     </section>
+     
+      <section id="movies" class="container w-75 mt-md-5 px-lg-5 py-3">
+         <div class="row gx-5 m-0 p-0 search-bars">
+            <div class="col-12">
+               <input type="text" class="text-center form-control mb-5" id="allMovies" placeholder="get movies by word..." />
+            </div>
+            
+         </div>
+         <div  class=" ">
+            <div id="posts" class="row m-0 p-0 g-5">
+               
+            </div>
+         </div>
+      </section>
+      <section id="contactUs" class="mb-5">
+         <div class="container w-75">
+            <h2 class="text-light my-5">ContacUs...</h2>
+            <div class="row g-md-5 m-0 p-0">
+               <div class="col-md-6">
+                  <input type="text" class="text-center form-control" id="userName" placeholder="Enter your name" />
+               </div>
+               <div class="col-md-6">
+                  <input type="email" class="text-center form-control" id="userEmail" placeholder="Enter your Email" />
+               </div>
+               <div class="col-md-6">
+                  <input type="number" class="text-center form-control" id="userPhone" placeholder="Enter your Phone" />
+               </div>
+               <div class="col-md-6">
+                  <input type="number" class="text-center form-control" id="userAge" placeholder="Enter your Age" />
+               </div>
+               <div class="col-md-6">
+                  <input type="password" class="text-center form-control" id="userPass" placeholder="Enter your password" />
+               </div>
+               <div class="col-md-6">
+                  <input type="password" class="text-center form-control" id="userRePass" placeholder="Enter your password" />
+               </div>
+               <div class="col text-md-start text-sm-center" >
+                  <button id="submitBtn" class="btn btn-outline-danger my-3" >Submit</button>
+               </div>
+               <div id="submitted" class="alert alert-success d-none" role="alert">
+                  <p>Your data has been submitted successfully</p>
+                </div>
+                <div id="notSubmitted" class="alert alert-danger d-none" role="alert">
+                  <p>Please Enter valid data</p>
+                </div>
+            </div>
+         </div>
+      </section>
+      <nav id="sideNav" class="position-fixed top-0 vh-100 bg-danger">
+         <div class="row m-0 p-0">
+            <div class="col-9 bg-black d-flex flex-wrap align-content-between vh-100 nav-black-area">
+               <ul class="nav flex-column w-100 mt-3">
+                  <li class="nav-item wow bounceInUp active" data-wow-duration="1s" data-wow-delay=".2s">
+                     <a id="nowPlayingBtn"class="nav-link" aria-current="page" href="#">Now playing</a>
+                  </li>
+                  <li class="nav-item wow bounceInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                     <a id="popularBtn" class="nav-link" href="#">Popular</a>
+                  </li>
+                  <li class="nav-item wow bounceInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                     <a id="topRatedBtn" class="nav-link" href="#">Top Rated</a>
+                  </li>
+                  <li class="nav-item wow bounceInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                     <a id="trendingBtn" class="nav-link" href="#">Trending</a>
+                  </li>
+                  <li class="nav-item wow bounceInUp " data-wow-duration="1s" data-wow-delay=".8s">
+                     <a id="upcomingBtn" class="nav-link" href="#">Upcoming</a>
+                  </li>
+                  <li class="nav-item wow bounceInUp " data-wow-duration="1s" data-wow-delay="1s">
+                     <a class="nav-link" href="#contactUs">Contact Us</a>
+                  </li>
+               </ul>
+               <div class="socialIcons d-flex justify-content-between my-5">
+                  <div class="row g-5 m-0 p-0">
+                     <div class="col-4 wow slideInLeft ">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     </div>
+                     <div class="col-4 wow slideInLeft">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                     </div>
+                     <div class="col-4 wow slideInLeft">
+                        <a href="#"><i class="fa-solid fa-globe"></i></a>
+                     </div>
+                     <div class="col-12">
+                        <span>Copyright Â© 2019 All Rights Reserved.</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-3 bg-light vh-100 p-0">
+               <div class="row m-0 p-0 align-content-between h-100">
+                  <div class="col-12 mt-5"><img src="imgs/logo.png" alt="" class="img-fluid" /></div>
+                  <div class="col-12" id="toggler-closer"><i class="fa fa-align-justify"></i></div>
+                  <div class="col-12  mb-5">
+                     <div class="row g-2 m-0 p-0">
+                        <div class="col-12 social-icon">
+                           <a href="#" ><i class="fa-solid fa-globe  text-black"></i></a>
+                        </div>
+                        <div class="col-12 ">
+                           <a href="#"><i class="fa-solid fa-share-nodes  text-black"></i></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- JS links start -->
+      <script src="js/all.min.js"></script>
+      <script src="js/jquery-3.6.0.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script src="js/main.js"></script>
+      <!-- JS links end -->
+   </body>
+</html>
